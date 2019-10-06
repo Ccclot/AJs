@@ -1,0 +1,70 @@
+<html>
+<head>
+	<title>The AJ for you :D </title>
+	<meta charset="utf-8">
+</head>
+	<style type ="text/css">
+	*{margin:0px;padding:0px;}
+	#Top{width:1920px; height:80px; border:1px solid #eee;background-image: url("images/img/nike.jpg");background-repeat: no-repeat;background-size: 400px 150px;position: fixed;top: 0px;left: 0px;background-color: white;margin-bottom: 100px; z-index:2px;}
+	#Tip{width:1920px;height:300px;border:0px solid #000;background-image: url("images/img/飞人.jpg");background-size: 300px 300px;background-repeat: no-repeat;background-position:center ;}
+	#Content1{width:1310px;height:600px;border:1px solid #000;float: left;text-align:center;background-image: url("images/img/MJ.jpg");background-repeat: no-repeat;background-position:center;background-size:1310px 600px;}
+	#Content2{width:480px;height:600px;border:1px solid #eee;float:right;text-align:center;}
+	#Bottom{width: 1900px;height: 160px;border: 1px solid #eee;float:left;text-align:center}
+	.sentences{font-size: 18px;text-indent: 2em;color:#000;font-family:"幼圆";}
+	.search {margin-left: 1600px;margin-right:20px;width: 210px;height:50px;border-radius: 18px;outline: none;border: 1px solid #ccc;position: absolute;background-image:url("images/img/图标.jpg");background-repeat: no-repeat;}
+	.time{margin-left:1700px;position:absolute;width: 110px;height: 20px;margin-top: 50px;border: 0px ;font-size:15px;}
+	.button{border-radius: 18px;outline: none;border: 1px solid #ccc;height: 50px;width: 150px;background-color: white;}
+	a:link{text-decoration-line: none;color: #000}
+	a:hover{text-decoration-line: underline;color: #000}
+	</style>
+	
+<body onload="clock();">
+	<script type="text/javascript">
+	
+	
+	function clock(){
+		var timestr = "";
+		var now = new Date();
+		var hours= now.getHours();
+		var minutes = now.getMinutes();
+		var seconds = now.getSeconds();
+		timestr += hours;
+		timestr += ((minutes<10) ? ":0" : ":" ) + minutes;
+		timestr += ((seconds<10) ? ":0" : ":" ) + seconds;
+		window.document.form1.txttime.value=timestr;
+		timer=setTimeout('clock()',1000);
+		}
+	function stopit(){clearTimeout(timer);}
+	
+	function clos(){
+	
+		location.href="homepage.html";
+	}
+	</script>
+	
+	<div id="Top">
+		<form  target="_blank" name="form1" id="form1"  action="http://baidu.com/" >
+			<input type="text" name="word" placeholder="&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp搜索" class="search">
+			<input type="text" name="txttime" id="txttime" class="time" value="&nbsp&nbsp&nbsp">
+		</form>
+	</div>
+	<div id="Tip"></div>
+	<table width="1920" height="80" >
+		<tr align="center" >
+						     <td><a href="AJS/AJ1.html" target="_blank">AJ1</a></td>	  <td><a href="AJS/AJ2.html" target="_blank">AJ2</a></td>  <td><a href="AJS/AJ3.html" target="_blank">AJ3</a></td>  
+						     <td><a href="AJS/AJ4.html" target="_blank">AJ4</a></td>   	  <td><a href="AJS/AJ5.html"target="_blank">AJ5</a></td>   <td><a href="AJS/AJ6.html" target="_blank">AJ6</a></td>
+						     <td><a href="AJS/AJ7.html" target="_blank">AJ7</a></td>  	  <td><a href="AJS/AJ8.html" target="_blank">AJ8</a></td>  <td><a href="AJS/AJ9.html" target="_blank">AJ9</a></td>    <td><a href="AJS/AJ10.html"target="_blank">AJ10</a></td> 	   <td><a href="AJS/AJ11.html" target="_blank">AJ11</a></td>  <td><a href="AJS/AJ12.html" target="_blank">AJ12</a></td>
+						     <td><a href="AJS/AJ13.html" target="_blank">AJ13</a></td>     <td><a href="AJS/AJ14.html" target="_blank">AJ14</a></td>  
+		</tr>
+	</table>
+	<div id="Content1"></div>
+	<div id="Content2"> <img src="images/img/timg.jpg" width="480px" height="350px" float:left>
+						<h3>Air Jordan</h3>
+						<p class="sentences">空中飞人 (Air Jordan) 是耐克旗下以史上最著名的NBA球星 迈克尔·乔丹(Michael Jordan）命名的系列。</p>
+						<p class="sentences">1985年，迈克尔·乔丹以高薪合约被当时还是小厂家的体育用品生产商耐克签约至旗下，耐克更随即为乔丹推出了第一款以乔丹命名的球鞋，即空中飞人系列的第一款。</p>
+						<p class="sentences">虽然这款球鞋在当时具备奇特的配色以及新奇的科技，但是谁都不曾想到，这居然会是一个神话的开始。</p>
+						</div>
+	<div id="Bottom">2170616&copy &nbsp &nbsp &nbspWords：@较瘦是个摄影师  &nbsp &nbsp &nbspPicuture：@那天
+	<button onclick="clos();"  class="button">Quit</button><button onclick="stopit()" class="button">Stop</button></div>
+</body>
+</html>
